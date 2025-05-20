@@ -27,6 +27,7 @@ Open terminal and try execute some kali linux commands
 ## EXECUTION STEPS AND ITS OUTPUT:
 
 SQL Injection is a sort of infusion assault that makes it conceivable to execute malicious SQL statements. These statements control a database server behind a web application. Assailants can utilize SQL Injection vulnerabilities to sidestep application safety efforts. They can circumvent authentication and authorization of a page or web application and recover the content of the whole SQL database. 
+![01](https://github.com/user-attachments/assets/67306383-7e64-4d76-b93d-3b7ea78fb3d5)
 
 
 Identify IP address using ifconfig in Metasploitable2
@@ -79,8 +80,12 @@ sudo nano /var/www/mutillidae/config.inc
 Type msfadmin when prompted for the root password. 
 Once nano opens config.inc file, look for the line $dbname = ‘metasploit’ as shown in Figure  below:
 
+![03](https://github.com/user-attachments/assets/e88f55d9-fe2e-4a9c-b2a9-823572afa1ea)
+
 
 Replace ‘metasploit’ with ‘owasp10’ and make sure the lines end with semicolon ; as shown in Figure
+OUTPUT:
+![02](https://github.com/user-attachments/assets/80012d87-e37e-43fe-b512-1cc184a4310b)
 
 
 Save and exit the config.inc
@@ -89,6 +94,8 @@ Save than exit the config.inc file by typing CTRL+X keys on your keyboard and th
 Restart the Apache server
 To restart Apache, type the following command in the terminal. Alternatively, you can just reboot Metasploitalbe 2 VM.
 sudo /etc/init.d/apache2 reload
+OUTPUT:
+![image](https://github.com/user-attachments/assets/50dcbf46-1041-4aec-a645-82d9c2f41ced)
 
 
  Reset Mutillidae database
